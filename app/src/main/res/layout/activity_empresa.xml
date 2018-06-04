@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context=".EmpresaActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/detalhe_empresa" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/empresa_detalhes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#ed4b28" />
+
+    <ScrollView
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:background="#333">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="320dp"
+                android:layout_height="400dp"
+                android:padding="@dimen/padding_padrao"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet maximus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In mattis blandit leo, id dictum mi elementum sagittis. Proin mollis urna eu rutrum malesuada. Curabitur eget bibendum libero. Vestibulum id interdum magna. Cras vitae semper urna. Sed ut tellus non est ultricies mattis sed ut magna. Etiam vel leo tortor. Ut lacinia, mauris in bibendum egestas, turpis nulla mollis lectus, vitae facilisis nunc mauris sed tortor. Nam ut tortor suscipit purus sagittis volutpat interdum id nisi. Mauris aliquam mauris sit amet mi dignissim ullamcorper. In non purus eget lacus porta fermentum ac eu turpis."
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
